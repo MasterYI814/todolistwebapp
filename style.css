@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+body {
+  background: #edf0f1;
+  padding: 60px 0 0 0;
+}
+
+body, input, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 58%;
+  height: 52px;
+
+  position: fixed;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  background: #4a655f;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 30px;
+}
+
+header input {
+  width: 85%;
+  height: 50px;
+  float: left;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  text-indent: 18px;
+  padding: 0 60px 0 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 25px 25px 25px 25px;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+
+}
+
+header input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header input:-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header input::-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header button {
+  width: 50px;
+  height: 50px;
+
+  position:absolute;
+  top:15px;
+  right:15px;
+  z-index:2;
+
+  border-radius: 25px;
+  background: #a9a9a9;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul.todo {
+  width: 80%;
+  float: left;
+  padding-left: 1px;
+
+}
+ul.todo li {
+  width: 47%;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  text-indent: 18px;
+  float: left;
+  line-height: 22px;
+  background: #fff;
+  position: relative;
+  border-radius: 25px;
+  padding: 13px 270px 11px 11px;
+  margin: 0 0 10px 0;
+}
+
+ul.todo li:last-of-type {
+  margin:0;
+}
+
+ul.todo li .buttons {
+  width: 250px;
+  height: 50px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+ul.todo li .buttons input[type:"date"]{
+  width: 100px;
+  height: 50px;
+  float: left;
+  font-size: 20px;
+  font-weight: 400;
+  background: none;
+  position: relative;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+ul.todo li .buttons input[type:"checkbox"]{
+  width: 100px;
+  height: 50px;
+  float: left;
+  font-size: 20px;
+  font-weight: 400;
+  left:50%;
+  background: none;
+  position: relative;
+  box-shadow: none;
+  outline: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: -7px 0 -5px 0px;
+}
+
+ul.todo li .buttons button {
+  width: 40px;
+  height: 50px;
+  float: left;
+  background: none;
+  position: relative;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+ul.todo li .buttons button.remove svg {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  position: 0 0 0 0;
+  margin: -7px 10px -4px 0px;
+}
+ul.todo li .buttons button.remove:hover svg {
+  background:#378a77;
+}
+
+/***
+ul.todo li .buttons button.complete svg {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  position: : 0px 0px 0 0px;
+  margin: -7px 0 0 0px;
+}
+ul.todo li .buttons button.complete:hover svg {
+  background:#378a77;
+}
+***/
