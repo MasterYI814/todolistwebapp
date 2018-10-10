@@ -28,21 +28,6 @@ function removeitem(){
       return false;
 }
 }
-/***
-function completeitem(){
-  console.log(e);
-  var retVal = confirm("Did you really finish this event?");
- if( retVal == true ){
-   var item=this.parentNode.parentNode;
-   var parent=item.parentNode;
-   item=item.strike();
-    return true;
-  }
-else{
-    return false;
-}
-}
-***/
 
 function addItem(text){
   var list=document.getElementById('todo');
@@ -60,10 +45,6 @@ function addItem(text){
   var remove=document.createElement('button');
   remove.classList.add('remove');
   remove.innerHTML=removesvg;
-
-  //var complete=document.createElement('button');
-  //complete.classList.add('complete');
-  //complete.innerHTML=completesvg;
 
   var checkbox=document.createElement('button');
   checkbox.classList.add('checkbox');
