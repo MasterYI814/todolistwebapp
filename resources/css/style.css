@@ -8,7 +8,9 @@ body {
 body, input, button {
   font-family: 'Roboto', sans-serif;
 }
-
+// what: some basic css code to start the layout of my app
+// where: https://github.com/themaxsandelin/todo
+// why: set the background layout of my web app. I do make some adjustments on it to the original file to satisfy my needs. 
 header {
   width: 58%;
   height: 52px;
